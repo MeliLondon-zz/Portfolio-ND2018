@@ -5,39 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/flexbox.css">
   <title>Melissa's Portfolio</title>
 </head>
 <body>
-  <header class='header'>
-    <h1>Melissa Arneau</h1>
+  <header class='main-header'>
+    <h1 class="name">Melissa Arneau</h1>
     <h2>Journey to Software Engineering</h2>
   </header>
 
-  <img src="img/car.jpg">
+  <div class="main-image">
+    <img class="logo" src="img/car.jpg">
+  </div>
 
   <h2>Projects</h2>
 
   <p>Below are few examples illustrating my recent work. They have been created using various languages such as HTML, CSS and JavaScript.</p>
 
   <div class='black women page'>
-    <img src="img/black-women-page.jpg" alt="Black Women Rock screenshot">
+    <img class="black-women-page" src="img/black-women-page.jpg" alt="Black Women Rock website screenshot">
     <h4>Black Women Rock</h4>
     <p>Webpage dedicated to inspiring black women</p>
+    <a class="button" href="#">Learn More</a>
   </div>
 
   <div class='baking page'>
-    <img src="img/baking-website.jpg" alt="Personal baking website screenshot">
+    <img class="baking-page" src="img/baking-website.jpg" alt="Personal baking website screenshot">
     <h4>Personal baking site</h4>
     <p>Webpage about my baking adventures</p>
+    <a class="button" href="#">Learn More</a>
   </div>
 
   <div class='mash game'>
-    <img src="img/mash-game.jpg" alt="Mash game screenshot">
+    <img class="game-page" src="img/mash-game.jpg" alt="Mash game screenshot">
     <h4>Mash game webpage</h4>
     <p>Fun game about finding your own path</p>
+    <a class="button" href="#">Learn More</a>
   </div>
 
   <hr>
+
+  <footer class="main-footer">
+    <span>&copy;2018 Melissa Arneau</span>
+  </footer>
 
 </body>
 </html>
