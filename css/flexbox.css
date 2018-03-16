@@ -2,65 +2,45 @@
   Base Styles
 ==================================== */
 
-body {
+header {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.introduction h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   flex: 1;
+  justify-content: space-around;
 }
 
-/* =================================
-  Media Queries
-==================================== */
-
-@media (min-width: 769px) {
-
-	.main-header,
-  .row,
-	.column {
-		display: flex;
-	}
-
-	.main-header {
-		flex-direction: column;
-		align-items: center;
-	}
-
-  .column {
-    flex: 1;
-		flex-direction: column;
-  }
-
-  .row {
-    flex-wrap: wrap;
-  }
-
-  .secondary {
-    order: -1;
-  }
-
-	.button {
-		margin-top: auto;
-		align-self: flex-start;
-	}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 20px;
 }
 
-@media (min-width: 1025px) {
+.button {
+  margin-top: auto;
+  width: 50%;
+  align-self: center;
+}
 
-	.main-header {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-  .column {
-    flex-basis: 0;
-  }
-
-  .primary {
-    flex-grow: 1;
-  }
-
+.primary {
+  flex-grow: 1;
+}
+.secondary {
+  order: -1;
 }
