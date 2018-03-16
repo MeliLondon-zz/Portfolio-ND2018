@@ -42,7 +42,10 @@ a {
 .main-image {
   display: flex;
   justify-content: center;
-  margin: 30px 55px;
+  margin-top: 20px;
+}
+.main-image img {
+	height: 550px;
 }
 
 .introduction {
@@ -89,5 +92,15 @@ p {
 
 	.main-image img {
 		height: 135px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.row {
+		display: block;
+	}
+
+	.main-image img {
+		height: 400px;
 	}
 }
