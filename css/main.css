@@ -85,6 +85,8 @@ p {
   text-align: center;
 }
 
+/* Media Queries */
+
 @media screen and (max-width: 412px) {
 	.row {
 		display: block;
